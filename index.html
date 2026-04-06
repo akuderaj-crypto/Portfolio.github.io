@@ -3,43 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raj Akude | Kinetic Portfolio</title>
+    <title>Raj Akude | Digital Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="animated-bg"></div>
-    
-    <main class="bento-grid">
-        <div class="bento-item profile">
-            <div class="photo-wrapper">
-                <img src="assets/Raj-photo.jpg" alt="Raj Narasinha Akude">
-            </div>
-            <h1>Raj Akude</h1>
-            <p>MIT Vishwaprayag University</p>
+
+    <nav class="nav-brutal">
+        <div class="logo">RAJ_AKUDE</div>
+        <div class="nav-links">
+            <a href="#about">INFO</a>
+            <a href="#certs">CERTS</a>
+            <a href="#gallery">MEDIA</a>
+        </div>
+    </nav>
+
+    <main class="bento-container">
+        <div class="bento-box profile-box">
+            <img src="assets/Raj-photo.jpg" alt="Raj Narasinha Akude" class="avatar">
+            <h1>Raj Narasinha Akude</h1>
+            <p>Student @ MIT Vishwaprayag University</p>
         </div>
 
-        <div class="bento-item cert-ai">
-            <span class="tag">New Achievement</span>
+        <div class="bento-box cert-box cisco">
+            <span class="badge">Feb 2026</span>
             <h3>Modern AI</h3>
-            <p>Cisco Networking Academy</p>
-            <span class="date">Feb 07, 2026</span>
+            <p>Certified by Cisco Networking Academy</p>
         </div>
 
-        <div class="bento-item cert-chem">
-            <h3>Chemistry ACE</h3>
-            <p>Preparatory Course AS1201</p>
-            <p class="source">via Coursera</p>
+        <div class="bento-box cert-box chemistry">
+            <span class="badge">Jan 2026</span>
+            <h3>ACE Chemistry</h3>
+            <p>MIT Vishwaprayag University | Coursera</p>
         </div>
 
-        <div class="bento-item gallery">
-            <div class="gallery-stack">
-                <img src="assets/ai-certificate.jpg" class="stack-img">
-                <img src="assets/chemistry-certificate.jpg" class="stack-img">
+        <div class="bento-box gallery-box" id="gallery">
+            <h3>Verified Documents</h3>
+            <div class="mini-gallery">
+                <img src="assets/ai-certificate.jpg" alt="AI Certificate">
+                <img src="assets/chemistry-certificate.jpg" alt="Chemistry Certificate">
             </div>
-            <p>View All Documents</p>
+        </div>
+
+        <div class="bento-box contact-box">
+            <h3>Let's Connect</h3>
+            <p>raj@email.com</p>
+            <div class="social-row">
+                <a href="#">GITHUB</a>
+                <a href="#">LINKEDIN</a>
+            </div>
         </div>
     </main>
 
-    <script src="script.js"></script>
 </body>
 </html>
