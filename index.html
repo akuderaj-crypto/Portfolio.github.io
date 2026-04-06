@@ -3,53 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raj Akude | Cyber Portfolio</title>
+    <title>Raj Akude | Kinetic Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="grid-background"></div>
-
-    <nav class="cyber-nav">
-        <div class="nav-container">
-            <div class="glitch-logo" data-text="RAJ.AKUDE">RAJ.AKUDE</div>
-            <ul class="links">
-                <li><a href="#achievements">Certificates</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><button id="theme-toggle">⚡</button></li>
-            </ul>
-        </div>
-    </nav>
-
-    <header class="cyber-hero">
-        <div class="portrait-container">
-            <img src="assets/Raj-photo.jpg" alt="Raj Akude" class="cyber-portrait">
-            <div class="glow-ring"></div>
-        </div>
-        <h1 class="neon-text">Raj Narasinha Akude</h1>
-        <p class="typewriter">Student @ MIT Vishwaprayag University</p>
-    </header>
-
-    <section id="achievements" class="section">
-        <div class="cyber-card">
-            <div class="card-header">01 // CISCO ACADEMY</div>
-            <h3>Modern AI Specialist</h3>
-            <p>Successfully completed **Introduction to Modern AI** [cite: 10] through the Cisco Networking Academy program [cite: 11] on **07 Feb 2026**[cite: 12].</p>
+    <div class="animated-bg"></div>
+    
+    <main class="bento-grid">
+        <div class="bento-item profile">
+            <div class="photo-wrapper">
+                <img src="assets/Raj-photo.jpg" alt="Raj Narasinha Akude">
+            </div>
+            <h1>Raj Akude</h1>
+            <p>MIT Vishwaprayag University</p>
         </div>
 
-        <div class="cyber-card">
-            <div class="card-header">02 // COURSERA</div>
-            <h3>Chemistry ACE Preparatory</h3>
-            <p>Authorized by **MIT Vishwaprayag University** [cite: 21] for course **ACE-AS1201**[cite: 20]. Verified completion on **Jan 24, 2026**[cite: 16].</p>
+        <div class="bento-item cert-ai">
+            <span class="tag">New Achievement</span>
+            <h3>Modern AI</h3>
+            <p>Cisco Networking Academy</p>
+            <span class="date">Feb 07, 2026</span>
         </div>
-    </section>
 
-    <section id="gallery" class="gallery-section">
-        <h2 class="glitch-logo">SECURE_DOCUMENTS</h2>
-        <div class="gallery-container">
-            <img src="assets/ai-certificate.jpg" class="doc-preview" alt="Cisco Certificate">
-            <img src="assets/chemistry-certificate.jpg" class="doc-preview" alt="Chemistry Certificate">
+        <div class="bento-item cert-chem">
+            <h3>Chemistry ACE</h3>
+            <p>Preparatory Course AS1201</p>
+            <p class="source">via Coursera</p>
         </div>
-    </section>
+
+        <div class="bento-item gallery">
+            <div class="gallery-stack">
+                <img src="assets/ai-certificate.jpg" class="stack-img">
+                <img src="assets/chemistry-certificate.jpg" class="stack-img">
+            </div>
+            <p>View All Documents</p>
+        </div>
+    </main>
 
     <script src="script.js"></script>
 </body>
