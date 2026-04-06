@@ -1,33 +1,213 @@
-<main class="section-grid">
-    <section id="home" class="hero wide-card fade-in">
-        <img src="assets/images/profile.jpg" class="profile-photo">
-        <h1>CREATIVE <span style="color: var(--accent)">DEVELOPER</span></h1>
-        <p>Designing the future of Solapur's digital presence.</p>
-    </section>
+/* Custom Fonts - Using a tech-focused, clean font */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500;700&family=Space+Grotesk:wght@300;500;700&display=swap');
 
-    <div id="about" class="card about-card fade-in">
-        <h2>About Me</h2>
-        <p>I focus on bridge-building between AI and user experience.</p>
-        <ul>
-            <li>📍 Based in Solapur</li>
-            <li>💻 Expert in Python & JavaScript</li>
-        </ul>
-    </div>
+:root {
+    /* Global Variables - Cyber Theme */
+    --bg-main: #0a0e17; /* Very Dark Navy */
+    --text-primary: #e6e6e6;
+    --text-secondary: #a0a0a0;
+    --cyber-neon: #00fff2; /* Neon Cyan */
+    --cyber-glow: rgba(0, 255, 242, 0.4);
+    --organic-primary: #7000ff; /* Deep Purple */
+    --organic-secondary: #ff007f; /* Hot Pink */
+    --transition: cubic-bezier(0.23, 1, 0.32, 1); /* Custom smooth easing */
+}
 
-    <div class="card achievements-card fade-in">
-        <h3>Certifications</h3>
-        <p>Coursera | NetAcad | Yuva AI</p>
-    </div>
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+    scrollbar-width: thin;
+    scrollbar-color: var(--cyber-neon) var(--bg-main);
+}
 
-    <div class="card project-card fade-in"><h3>Ai4A</h3></div>
-    <div class="card project-card fade-in"><h3>ACE</h3></div>
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    overflow-x: hidden;
+    position: relative;
+    line-height: 1.6;
+}
 
-    <section id="gallery" class="card wide-card fade-in">
-        <h2>My Gallery</h2>
-        <div class="gallery-wrapper">
-             <img src="assets/images/cert1.jpg">
-             <img src="assets/images/project1.jpg">
-             <img src="assets/images/event1.jpg">
-        </div>
-    </section>
-</main>
+/* ANIMATION 1: The "Organic" Background Flow */
+/* We create floating blur-circles for a fluid background */
+body::before, body::after {
+    content: '';
+    position: fixed;
+    width: 600px; height: 600px;
+    border-radius: 50%;
+    filter: blur(150px);
+    opacity: 0.2;
+    z-index: -2;
+    animation: flowBackground 20s infinite alternate;
+}
+
+body::before { background: var(--organic-primary); top: -10%; left: -10%; }
+body::after { background: var(--organic-secondary); bottom: -10%; right: -10%; animation-delay: -10s; }
+
+@keyframes flowBackground {
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(150px, 150px) scale(1.2); }
+}
+
+/* ANIMATION 2: The "Cyber" Grid Overlay */
+/* This adds a faint subtle grid pattern over the entire site */
+.grid-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: 
+        linear-gradient(rgba(0, 255, 242, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 255, 242, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    z-index: -1;
+    pointer-events: none; /* Let clicks pass through */
+}
+
+/* Navigation - Modern Floating Design */
+nav {
+    position: fixed;
+    top: 30px; left: 50%;
+    transform: translateX(-50%);
+    width: 90%; max-width: 1200px;
+    background: rgba(10, 14, 23, 0.8); /* Semi-transparent */
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    border: 1px solid var(--cyber-neon);
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    z-index: 1000;
+    box-shadow: 0 0 20px var(--cyber-glow);
+}
+
+.nav-links { display: flex; list-style: none; gap: 30px; }
+.nav-links a { 
+    text-decoration: none; 
+    color: var(--text-primary);
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s var(--transition);
+}
+.nav-links a:hover { color: var(--cyber-neon); text-shadow: 0 0 10px var(--cyber-neon); }
+
+/* Buttons & Toggles */
+.btn-toggle {
+    background: transparent;
+    color: var(--cyber-neon);
+    border: 1px solid var(--cyber-neon);
+    padding: 10px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'Fira Code', monospace;
+    transition: all 0.3s var(--transition);
+}
+.btn-toggle:hover { background: var(--cyber-neon); color: var(--bg-main); box-shadow: 0 0 15px var(--cyber-neon); }
+
+/* Hero Section - The First Impression */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.profile-photo {
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--cyber-neon);
+    box-shadow: 0 0 30px var(--cyber-glow);
+    margin-bottom: 30px;
+    transition: 0.5s var(--transition);
+}
+.profile-photo:hover { transform: scale(1.05) rotate(3deg); }
+
+h1 {
+    font-size: 5rem; font-weight: 700; letter-spacing: -3px; line-height: 1;
+    color: transparent; -webkit-text-stroke: 1px var(--text-primary); /* Outline effect */
+    margin-bottom: 20px;
+}
+.highlight { color: var(--text-primary); -webkit-text-stroke: 0px; text-shadow: 0 0 15px var(--text-primary); }
+
+/* Common Sections */
+section { padding: 100px 10%; position: relative; }
+h2 { text-align: center; font-size: 3rem; margin-bottom: 60px; color: transparent; -webkit-text-stroke: 1px var(--text-primary); }
+
+/* The "Cyber" Cards (Bento Style Layout) */
+.section-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s var(--transition);
+}
+
+.card:hover {
+    border-color: var(--cyber-neon);
+    box-shadow: 0 0 30px var(--cyber-glow);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* ANIMATION 3: The "Organic" Shimmer Edge */
+/* A subtle glow that follows the card border on hover */
+.card::before {
+    content: ''; position: absolute; top: -50%; left: -50%;
+    width: 200%; height: 200%;
+    background: conic-gradient(transparent, var(--organic-primary), transparent, var(--organic-secondary));
+    animation: rotateShimmer 10s linear infinite;
+    opacity: 0; transition: 0.4s; z-index: -1;
+}
+.card:hover::before { opacity: 1; }
+
+@keyframes rotateShimmer { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+/* Achievements / Certifications */
+.cert-item { margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+.cert-item h4 { color: var(--cyber-neon); font-family: 'Fira Code', monospace; }
+
+/* Gallery Horizontal Flow */
+.gallery-wrapper {
+    display: flex; gap: 20px;
+    overflow-x: auto;
+    padding: 20px 0;
+    scrollbar-width: none; /* Hide scrollbar */
+}
+.gallery-wrapper::-webkit-scrollbar { display: none; } /* Hide scrollbar for Chrome */
+
+.gallery-wrapper img {
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    transition: 0.4s var(--transition);
+    filter: brightness(80%);
+}
+.gallery-wrapper img:hover { filter: brightness(100%); transform: scale(1.05); }
+
+/* Contact Section */
+.contact-links { text-align: center; }
+.contact-links a { 
+    color: var(--text-primary);
+    text-decoration: none; 
+    font-family: 'Fira Code', monospace;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+.contact-links a:hover { color: var(--cyber-neon); text-shadow: 0 0 10px var(--cyber-neon); }
+
+/* Animation: Scroll-to-Reveal */
+.fade-in { opacity: 0; transform: translateY(40px); transition: 1s var(--transition); }
+.fade-in.appear { opacity: 1; transform: translateY(0); }
