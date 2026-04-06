@@ -3,42 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raj Akude | Kinetic Portfolio</title>
+    <title>Raj Akude | Digital Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="animated-bg"></div>
-    
-    <main class="bento-grid">
-        <div class="bento-item profile">
-            <div class="photo-wrapper">
-                <img src="assets/Raj-photo.jpg" alt="Raj Narasinha Akude">
+    <nav>
+        <div class="logo">RA Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle">🌓 Toggle Mode</button>
+    </nav>
+
+    <section id="home" class="hero">
+        <img src="assets/images/Raj_photo.jpg" alt="Raj Akude Profile Photo" class="profile-img">
+        <h1>Raj Narasinha Akude</h1> [cite: 8, 18]
+        <p>Student at MIT Vishwaprayag University | AI & Chemistry Enthusiast</p> [cite: 17, 21]
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <p><strong>Education:</strong> MIT Vishwaprayag University [cite: 17]</p>
+            <p><strong>Interests:</strong> Artificial Intelligence, Modern Technology, and Chemistry [cite: 10, 20]</p>
+            <p><strong>Strengths:</strong> Technical Learning, Problem Solving, and Scientific Analysis</p>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <h2>Achievements & Certifications</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Cisco Networking Academy</h3>
+                <p><strong>Introduction to Modern AI</strong> </p>
+                <p>Completed: 07 Feb 2026 [cite: 12]</p>
             </div>
-            <h1>Raj Akude</h1>
-            <p>MIT Vishwaprayag University </p>
-        </div>
-
-        <div class="bento-item cert-ai">
-            <span class="tag">New Achievement</span>
-            <h3>Modern AI</h3>
-            <p>Cisco Networking Academy [cite: 6]</p>
-            <span class="date">Feb 07, 2026 [cite: 12]</span>
-        </div>
-
-        <div class="bento-item cert-chem">
-            <h3>Chemistry ACE</h3>
-            <p>Preparatory Course AS1201 [cite: 20]</p>
-            <p class="source">via Coursera [cite: 21]</p>
-        </div>
-
-        <div class="bento-item gallery">
-            <div class="gallery-stack">
-                <img src="assets/ai-certificate.jpg" class="stack-img">
-                <img src="assets/chemistry-certificate.jpg" class="stack-img">
+            <div class="card">
+                <h3>Coursera / MIT Vishwaprayag</h3>
+                <p><strong>Revisiting Chemistry: Preparatory course for ACE-AS1201</strong> [cite: 20, 21]</p>
+                <p>Completed: Jan 24, 2026 [cite: 16]</p>
             </div>
-            <p>View All Documents</p>
+            <div class="card">
+                <h3>Core Projects</h3>
+                <ul>
+                    <li>Ai4A Project (AI Implementation)</li>
+                    <li>Design Thinking Project</li>
+                    <li>ACE Project: Chemistry Preparatory Course </li>
+                </ul>
+            </div>
         </div>
-    </main>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery & Certificates</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="assets/certificates/AI_Certificate.png" alt="Introduction to Modern AI Certificate">
+                <p>Cisco AI Certificate </p>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/certificates/Chemistry_Certificate.png" alt="Chemistry ACE Certificate">
+                <p>ACE Chemistry Certificate </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="socials">
+            <p>Email: raj.akude@example.com</p>
+            <a href="https://github.com/RajAkude" target="_blank">GitHub</a> | 
+            <a href="https://linkedin.com/in/rajakude" target="_blank">LinkedIn</a>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
