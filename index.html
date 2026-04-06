@@ -3,85 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raj Narasinha Akude | Portfolio</title>
+    <title>Raj Akude | Cyber Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="grid-background"></div>
 
-    <nav class="navbar">
-        <div class="container">
-            <span class="brand">R. Akude</span>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#credentials">Credentials</a></li>
+    <nav class="cyber-nav">
+        <div class="nav-container">
+            <div class="glitch-logo" data-text="RAJ.AKUDE">RAJ.AKUDE</div>
+            <ul class="links">
+                <li><a href="#achievements">Certificates</a></li>
                 <li><a href="#gallery">Gallery</a></li>
-                <li><button id="theme-toggle" class="btn-icon">◐</button></li>
+                <li><button id="theme-toggle">⚡</button></li>
             </ul>
         </div>
     </nav>
 
-    <section id="hero" class="hero">
-        <div class="hero-grid">
-            <div class="hero-text">
-                <h1>Raj Narasinha Akude</h1>
-                <p class="subtitle">Engineering Student at MIT Vishwaprayag University</p>
-                <div class="hero-cta">
-                    <a href="#contact" class="btn-primary">Get in Touch</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="assets/Raj-photo.jpg" alt="Raj Narasinha Akude" class="profile-frame">
-            </div>
+    <header class="cyber-hero">
+        <div class="portrait-container">
+            <img src="assets/Raj-photo.jpg" alt="Raj Akude" class="cyber-portrait">
+            <div class="glow-ring"></div>
+        </div>
+        <h1 class="neon-text">Raj Narasinha Akude</h1>
+        <p class="typewriter">Student @ MIT Vishwaprayag University</p>
+    </header>
+
+    <section id="achievements" class="section">
+        <div class="cyber-card">
+            <div class="card-header">01 // CISCO ACADEMY</div>
+            <h3>Modern AI Specialist</h3>
+            <p>Successfully completed **Introduction to Modern AI** [cite: 10] through the Cisco Networking Academy program [cite: 11] on **07 Feb 2026**[cite: 12].</p>
+        </div>
+
+        <div class="cyber-card">
+            <div class="card-header">02 // COURSERA</div>
+            <h3>Chemistry ACE Preparatory</h3>
+            <p>Authorized by **MIT Vishwaprayag University** [cite: 21] for course **ACE-AS1201**[cite: 20]. Verified completion on **Jan 24, 2026**[cite: 16].</p>
         </div>
     </section>
 
-    <section id="credentials" class="section">
-        <div class="container">
-            <h2 class="section-title">Certifications</h2>
-            <div class="credential-list">
-                <div class="credential-item">
-                    <div class="cert-info">
-                        <h3>Introduction to Modern AI</h3>
-                        <p class="org">Cisco Networking Academy</p>
-                    </div>
-                    <span class="cert-date">Feb 07, 2026</span>
-                </div>
-                <div class="credential-item">
-                    <div class="cert-info">
-                        <h3>Revisiting Chemistry: ACE-AS1201</h3>
-                        <p class="org">MIT Vishwaprayag University (Coursera)</p>
-                    </div>
-                    <span class="cert-date">Jan 24, 2026</span>
-                </div>
-            </div>
+    <section id="gallery" class="gallery-section">
+        <h2 class="glitch-logo">SECURE_DOCUMENTS</h2>
+        <div class="gallery-container">
+            <img src="assets/ai-certificate.jpg" class="doc-preview" alt="Cisco Certificate">
+            <img src="assets/chemistry-certificate.jpg" class="doc-preview" alt="Chemistry Certificate">
         </div>
     </section>
-
-    <section id="gallery" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Verified Documents</h2>
-            <div class="document-grid">
-                <figure class="doc-card">
-                    <img src="assets/ai-certificate.jpg" alt="Cisco AI Certificate">
-                    <figcaption>Cisco Networking Academy AI Cert</figcaption>
-                </figure>
-                <figure class="doc-card">
-                    <img src="assets/chemistry-certificate.jpg" alt="Coursera Chemistry Certificate">
-                    <figcaption>MITVPU Chemistry Preparatory Cert</figcaption>
-                </figure>
-            </div>
-        </div>
-    </section>
-
-    <footer id="contact" class="footer">
-        <div class="container">
-            <p>Connect with me via <strong>raj@example.com</strong></p>
-            <div class="social-links">
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
-            </div>
-        </div>
-    </footer>
 
     <script src="script.js"></script>
 </body>
