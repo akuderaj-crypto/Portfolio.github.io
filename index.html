@@ -8,85 +8,80 @@
 </head>
 <body>
 
-    <nav>
-        <div class="logo">Raj's Portfolio</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#achievements">Achievements</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button id="dark-mode-toggle">🌓</button>
+    <nav class="navbar">
+        <div class="container">
+            <span class="brand">R. Akude</span>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#credentials">Credentials</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><button id="theme-toggle" class="btn-icon">◐</button></li>
+            </ul>
+        </div>
     </nav>
 
-    <header id="home" class="hero">
-        <img src="assets/Raj-photo.jpg" alt="Raj Narasinha Akude" class="profile-img">
-        <h1>Hi, I'm Raj Narasinha Akude</h1> [cite: 8, 18]
-        <p>Aspiring Engineer | Tech Enthusiast</p>
-    </header>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="content-box">
-            <p><strong>Education:</strong> MIT Vishwaprayag University [cite: 17]</p>
-            <p><strong>Interests:</strong> Artificial Intelligence, Chemistry, Web Development [cite: 10, 20]</p>
-            <p><strong>Strengths:</strong> Continuous Learning, Technical Analysis, Innovation</p>
-        </div>
-    </section>
-
-    <section id="achievements">
-        <h2>Achievements & Certifications</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Cisco Networking Academy</h3>
-                <p>Completed "Introduction to Modern AI" on 07 Feb 2026. [cite: 10, 11, 12]</p>
+    <section id="hero" class="hero">
+        <div class="hero-grid">
+            <div class="hero-text">
+                <h1>Raj Narasinha Akude</h1>
+                <p class="subtitle">Engineering Student at MIT Vishwaprayag University</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn-primary">Get in Touch</a>
+                </div>
             </div>
-            <div class="card">
-                <h3>Coursera / MIT Vishwaprayag</h3>
-                <p>Completed "Revisiting chemistry: Preparatory course for ACE-AS1201" on Jan 24, 2026. [cite: 16, 20, 21]</p>
+            <div class="hero-image">
+                <img src="assets/Raj-photo.jpg" alt="Raj Narasinha Akude" class="profile-frame">
             </div>
         </div>
     </section>
 
-    <section id="projects">
-        <h2>Key Projects</h2>
-        <div class="grid">
-            <div class="card">
-                <img src="assets/ai4a-project.png" alt="Ai4A Project">
-                <h3>Ai4A Project</h3>
-                <p>Artificial Intelligence for All - focused on modern AI applications. [cite: 10]</p>
-            </div>
-            <div class="card">
-                <img src="assets/ace-project.png" alt="ACE Project">
-                <h3>ACE Project</h3>
-                <p>Chemistry preparatory work for ACE-AS1201. [cite: 20]</p>
-            </div>
-            <div class="card">
-                <img src="assets/design-thinking.png" alt="Design Thinking">
-                <h3>Design Thinking</h3>
-                <p>Problem-solving and creative project management.</p>
+    <section id="credentials" class="section">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="credential-list">
+                <div class="credential-item">
+                    <div class="cert-info">
+                        <h3>Introduction to Modern AI</h3>
+                        <p class="org">Cisco Networking Academy</p>
+                    </div>
+                    <span class="cert-date">Feb 07, 2026</span>
+                </div>
+                <div class="credential-item">
+                    <div class="cert-info">
+                        <h3>Revisiting Chemistry: ACE-AS1201</h3>
+                        <p class="org">MIT Vishwaprayag University (Coursera)</p>
+                    </div>
+                    <span class="cert-date">Jan 24, 2026</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <div class="gallery-grid">
-            <img src="assets/ai-certificate.jpg" alt="AI Certificate [cite: 10]">
-            <img src="assets/chemistry-certificate.jpg" alt="Chemistry Certificate [cite: 20]">
-            <img src="assets/Raj-photo.jpg" alt="Raj Photo">
+    <section id="gallery" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Verified Documents</h2>
+            <div class="document-grid">
+                <figure class="doc-card">
+                    <img src="assets/ai-certificate.jpg" alt="Cisco AI Certificate">
+                    <figcaption>Cisco Networking Academy AI Cert</figcaption>
+                </figure>
+                <figure class="doc-card">
+                    <img src="assets/chemistry-certificate.jpg" alt="Coursera Chemistry Certificate">
+                    <figcaption>MITVPU Chemistry Preparatory Cert</figcaption>
+                </figure>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:raj@example.com">raj@example.com</a></p>
-        <div class="socials">
-            <a href="#">GitHub</a> | <a href="#">LinkedIn</a>
+    <footer id="contact" class="footer">
+        <div class="container">
+            <p>Connect with me via <strong>raj@example.com</strong></p>
+            <div class="social-links">
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+            </div>
         </div>
-    </section>
+    </footer>
 
     <script src="script.js"></script>
 </body>
