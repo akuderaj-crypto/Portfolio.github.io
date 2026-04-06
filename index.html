@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Professional Portfolio</title>
+    <title>My Digital Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
-        <div class="logo">Portfolio</div>
+        <div class="logo">MyPortfolio</div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -18,23 +17,22 @@
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <button id="theme-toggle">🌙</button>
+        <button id="dark-mode-toggle">🌓</button>
     </nav>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <img src="profile.jpg" alt="Your Name" class="profile-img">
-            <h1>Hi, I'm [Your Name]</h1>
-            <p>Aspiring Developer | Creative Thinker | Problem Solver</p>
-        </div>
-    </section>
+    <header id="home" class="hero">
+        <img src="assets/profile.jpg" alt="Profile Photo" class="profile-img">
+        <h1>Hi, I'm [Your Name]</h1>
+        <p>Student | Developer | Lifelong Learner</p>
+    </header>
 
     <section id="about">
         <h2>About Me</h2>
-        <div class="about-container">
-            <p><strong>Education:</strong> [Your Degree/School]</p>
-            <p><strong>Interests:</strong> [AI, Coding, Design]</p>
-            <p><strong>Strengths:</strong> [Leadership, Python, Creative UI]</p>
+        <div class="content-box">
+            <p><strong>Education:</strong> [Your University/College]</p>
+            <p><strong>Interests:</strong> Web Development, AI, Design</p>
+            <p><strong>Goals:</strong> To build impactful technology solutions.</p>
+            <p><strong>Strengths:</strong> Problem solving, Team leadership, Python.</p>
         </div>
     </section>
 
@@ -42,50 +40,48 @@
         <h2>Achievements & Certifications</h2>
         <div class="grid">
             <div class="card">
-                <h3>Coursera / NetAcad / Yuva AI</h3>
-                <p>Completed professional certifications in [Topic Name].</p>
+                <h3>Certificates</h3>
+                <ul>
+                    <li>Coursera: [Course Name]</li>
+                    <li>NetAcad: [Course Name]</li>
+                    <li>Yuva AI Certification</li>
+                </ul>
             </div>
             <div class="card">
-                <h3>Design Thinking Project</h3>
-                <p>Applied human-centered design to solve [Problem].</p>
+                <h3>Projects of Note</h3>
+                <p>Ai4A Project, Design Thinking, and ACE Project.</p>
             </div>
         </div>
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
+        <h2>Key Projects</h2>
         <div class="grid">
             <div class="card">
+                <img src="assets/project-ai.jpg" alt="Ai4A">
                 <h3>Ai4A Project</h3>
-                <p>Description of your AI for All project work.</p>
-                <a href="#">View Link</a>
+                <p>Detailed description of your AI project.</p>
+                <a href="#">Live Link</a>
             </div>
-            <div class="card">
-                <h3>ACE Project</h3>
-                <p>A deep dive into [Project Topic].</p>
             </div>
-        </div>
     </section>
 
     <section id="gallery">
         <h2>Media Gallery</h2>
         <div class="gallery-grid">
-            <img src="cert1.jpg" alt="Certificate 1">
-            <img src="project1.jpg" alt="Project Screenshot">
+            <img src="assets/cert1.jpg" alt="Certificate">
+            <img src="assets/cert2.jpg" alt="Certificate">
+            <img src="assets/event1.jpg" alt="Event Photo">
         </div>
     </section>
 
     <section id="contact">
-        <h2>Get In Touch</h2>
-        <p>Email: your@email.com</p>
-        <div class="socials">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+        <div class="social-links">
             <a href="#">LinkedIn</a> | <a href="#">GitHub</a>
         </div>
     </section>
-
-    <footer>
-        <p>&copy; 2026 [Your Name]. All Rights Reserved.</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>
