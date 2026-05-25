@@ -209,5 +209,22 @@ h2 { text-align: center; font-size: 3rem; margin-bottom: 60px; color: transparen
 .contact-links a:hover { color: var(--cyber-neon); text-shadow: 0 0 10px var(--cyber-neon); }
 
 /* Animation: Scroll-to-Reveal */
+/* ... All your existing website styles (header, nav, footer, etc.) ... */
+
+/* =================================*********
+   THEME TOGGLE STYLES (Add this at the very bottom)
+   ================================********* */
+/* Default Dark Mode Styles */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Optional: Makes the switch smooth! */
+}
+
+/* Light Mode Overrides */
+body.light-mode {
+    background-color: #ffffff;
+    color: #121212;
+}
 .fade-in { opacity: 0; transform: translateY(40px); transition: 1s var(--transition); }
 .fade-in.appear { opacity: 1; transform: translateY(0); }
